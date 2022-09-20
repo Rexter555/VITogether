@@ -47,8 +47,8 @@ body
 	position: absolute;
 	top: -50%;
 	left: -50%;
-	width: 380px;
-	height: 420px;
+	width: 400px;
+	height: 450px;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
 	animation: animate 6s linear infinite;
@@ -60,8 +60,8 @@ body
 	position: absolute;
 	top: -50%;
 	left: -50%;
-	width: 380px;
-	height: 420px;
+	width: 400px;
+	height: 450px;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
 	animation: animate 6s linear infinite;
@@ -186,4 +186,37 @@ input[type="submit"]
 input[type="submit"]:active 
 {
 	opacity: 0.8;
+}
+
+
+
+/* Media Query For Tablet */
+@media only screen and (max-width: 768px) {
+	.box 
+	{
+		width: 350px;
+		height: 400px;
+	}
+	.box::before 
+	{
+		width: 350px;
+		height: 400px;
+	}
+	.box::after 
+	{
+		width: 350px;
+		height: 400px;
+	}
+	form 
+	{
+		padding: 50px 40px;
+	}
+	.inputBox 
+	{
+		width: 300px;
+	}
+	.links 
+	{
+		margin-top: 20px;
+	}
 }
